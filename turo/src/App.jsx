@@ -8,6 +8,7 @@ import CarCardThere from './Components/CarCardThere'
 import NavHref from './Pages/NavHref'
 import CarCardFour from './Components/CarCardFour'
 import CardCardSix from './Components/CardCardSix'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <CarCardThere />
       <CarCardFour/>
       <CardCardSix/>
+      <Footer/>
     </div>
   )
 }

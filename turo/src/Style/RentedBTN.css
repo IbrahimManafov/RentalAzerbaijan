@@ -1,11 +1,11 @@
 .rented{
-    border: 1px solid transparent;
     width: 800px;
     height: 80px;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
+
     text-align: center ;
 }
 .rented button{
