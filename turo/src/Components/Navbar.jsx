@@ -13,7 +13,9 @@ function Navbar() {
         </div>
         <div className="navhref">
           <div className="navsign">
-            <button>Why choose Turo</button>
+            <button>
+              Why choose Turo
+            </button>
           </div>
           <div className="navavr">
             <a href="#">
