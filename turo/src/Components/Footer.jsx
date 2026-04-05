@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
@@ -12,7 +11,7 @@ function Footer() {
           <Link to="/">Careers</Link>
           <Link to="/">Press</Link>
         </div>
-        
+
         <div className="footer-section">
           <h4>Locations</h4>
           <Link to="/search?location=Los Angeles">Los Angeles</Link>
@@ -21,7 +20,7 @@ function Footer() {
           <Link to="/search?location=New York">New York</Link>
           <Link to="/search?location=Las Vegas">Las Vegas</Link>
         </div>
-        
+
         <div className="footer-section">
           <h4>Explore</h4>
           <Link to="/search">Book a car</Link>
@@ -30,7 +29,7 @@ function Footer() {
           <Link to="/search?category=sports">Sports cars</Link>
           <Link to="/search?category=suv">SUVs</Link>
         </div>
-        
+
         <div className="footer-section">
           <h4>Hosting</h4>
           <Link to="/host">List your car</Link>
@@ -39,7 +38,7 @@ function Footer() {
           <Link to="/">Host tools</Link>
           <Link to="/">Host guide</Link>
         </div>
-        
+
         <div className="footer-section">
           <h4>Support</h4>
           <Link to="/">Help center</Link>
@@ -49,12 +48,14 @@ function Footer() {
           <Link to="/">Get the app</Link>
         </div>
       </div>
-      
+
       <div className="footer-bottom">
-        <p>&copy; 2026 Rental . All rights reserved. | Terms | Privacy | Sitemap</p>
+        <p>
+          &copy; 2026 Rental . All rights reserved. | Terms | Privacy | Sitemap
+        </p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
