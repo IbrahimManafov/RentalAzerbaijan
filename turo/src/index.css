@@ -283,7 +283,7 @@ input, select, textarea {
 
 .search-btn {
   padding: 16px 32px;
-  background: #593cfb;
+  background: #593cfb; /* Mavi button */
   color: #fff;
   border-radius: 12px;
   font-size: 16px;
@@ -292,6 +292,8 @@ input, select, textarea {
   align-items: center;
   gap: 8px;
   margin: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .search-btn svg {
@@ -299,10 +301,11 @@ input, select, textarea {
   height: 20px;
 }
 
+/* Hover efekti */
 .search-btn:hover {
-  background: #4830d9;
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(89, 60, 251, 0.5);
 }
-
 @media (max-width: 900px) {
   .search-box {
     padding: 16px;
@@ -400,15 +403,21 @@ input, select, textarea {
 }
 
 .car-card {
-  border-radius: 12px;
+  position: relative;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .car-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.car-card:hover .car-image {
+  filter: brightness(1.1) saturate(1.2);
+  transition: filter 0.3s ease;
 }
 
 .car-image {
@@ -1002,6 +1011,15 @@ input, select, textarea {
   flex-direction: column;
   gap: 24px;
 }
+.host-form button{
+    padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+    background: #593cfb;
+  color: #fff;
+}
 
 .form-section {
   background: #f8f8f8;
@@ -1485,3 +1503,192 @@ input, select, textarea {
 .empty-state p {
   margin-bottom: 24px;
 }
+.image-upload .preview {
+  display: flex;          /* şəkilləri yan-yana qoyur */
+  flex-wrap: wrap;        /* satır dolanda yeni satıra keçir */
+  gap: 10px;              /* şəkillər arası boşluq */
+  margin-top: 10px;
+}
+
+.image-upload .preview img {
+  width: 120px;           /* hər bir şəkilin eni */
+  height: 80px;           /* hündürlük */
+  object-fit: cover;      /* şəkil kəsilmədən containerə sığır */
+  border-radius: 6px;     /* kənar yumşaldır */
+  border: 1px solid #ccc; /* sadə kənar */
+}
+.fixed-textarea {
+  width: 716px;
+  height: 210px;
+  padding: 5px;
+  resize: none !important; /* !!! override üçün */
+  overflow: auto;          /* İçində scroll olsun */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vip-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.feature-label {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.feature-label input {
+  margin-right: 8px;
+  accent-color: #4f46e5; /* checkbox rəngi */
+}
+
+.feature-label:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.feature-label input:checked + span {
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+.feature-label input:checked {
+  filter: brightness(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container */
+.categories {
+  padding: 60px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+/* Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+}
+
+/* Individual Card */
+.category-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #111827;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Animation */
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+/* Icon Circle */
+.category-card div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #593cfb, #6b5bff);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.category-card:hover div {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.category-card svg {
+  stroke: #fff;
+}
+
+/* Category Name */
+.category-card span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Scroll Reveal Animation */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.category-card {
+  opacity: 0;
+  animation: fadeUp 0.6s forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Delay for each card */
+.category-card:nth-child(1) { --delay: 0s; }
+.category-card:nth-child(2) { --delay: 0.1s; }
+.category-card:nth-child(3) { --delay: 0.2s; }
+.category-card:nth-child(4) { --delay: 0.3s; }
+.category-card:nth-child(5) { --delay: 0.4s; }
+.category-card:nth-child(6) { --delay: 0.5s; }
+
+
+
+
+
+
+
+
+
+
+
