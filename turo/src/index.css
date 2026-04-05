@@ -1692,3 +1692,95 @@ input, select, textarea {
 
 
 
+/* Container */
+.how-it-works {
+  padding: 60px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+/* Steps Grid */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+/* Individual Step */
+.step {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Animation */
+.step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+/* Icon Circle */
+.step-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #593cfb, #6b5bff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.step:hover .step-icon {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.step-icon svg {
+  stroke: #fff;
+}
+
+/* Step Title */
+.step h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Step Description */
+.step p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Scroll Reveal Animation */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.step {
+  opacity: 0;
+  animation: fadeUp 0.6s forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Delay for each step */
+.step:nth-child(1) { --delay: 0s; }
+.step:nth-child(2) { --delay: 0.2s; }
+.step:nth-child(3) { --delay: 0.4s; }
