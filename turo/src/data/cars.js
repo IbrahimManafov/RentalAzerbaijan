@@ -23,6 +23,13 @@ export const cars = [
     features: ["Autopilot", "Bluetooth", "USB Charger", "Backup Camera", "Heated Seats", "Navigation"],
     description: "Tesla Model 3 ilə Bakıda müasir və rahat sürüş təcrübəsi yaşa.",
     host: { name: "Michael S.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "100%", trips: 450 },
+        reviews: [
+      { id: 1, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "March 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 2, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "February 2026", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 3, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "January 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 4, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "December 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 5, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "November 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+    ],
     instantBook: true
   },
   
@@ -50,6 +57,12 @@ export const cars = [
     features: ["Sport Mode", "Bluetooth", "Leather Seats", "Backup Camera", "Navigation", "Apple CarPlay"],
     description: "BMW M4 ilə Gəncədə sürət və gücün dadını çıxar.",
     host: { name: "David K.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2019", responseRate: "98%", trips: 234 },
+        reviews: [
+      { id: 1, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "March 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 2, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "February 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 4, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "December 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+    ],
     instantBook: true
   },
   {
@@ -76,6 +89,12 @@ export const cars = [
     features: ["Sport Exhaust", "Leather Interior", "BOSE Sound", "Navigation"],
     description: "Sumqayıtda Porsche 911 ilə premium sürüş təcrübəsi.",
     host: { name: "James R.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2018", responseRate: "100%", trips: 189 },
+        reviews: [
+      { id: 1, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "March 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 2, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "February 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 3, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "January 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 4, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "December 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+    ],
     instantBook: false
   },
 
@@ -103,6 +122,14 @@ export const cars = [
     features: ["4WD", "Leather Seats", "Navigation"],
     description: "Mingəçevirdə lüks SUV təcrübəsi.",
     host: { name: "Sarah L.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "99%", trips: 78 },
+        reviews: [
+      { id: 1, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "March 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 2, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "February 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 3, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "January 2026", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 4, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "December 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 5, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "November 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 6, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "October 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+    ],
     instantBook: true
   },
 
@@ -130,6 +157,13 @@ export const cars = [
     features: ["Bluetooth", "Backup Camera"],
     description: "Şəkidə sərfəli və rahat avtomobil.",
     host: { name: "Jennifer M.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "97%", trips: 156 },
+        reviews: [
+      { id: 1, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "March 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 2, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "February 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 3, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "January 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 4, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "December 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 5, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "November 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+    ],
     instantBook: true
   },
 
@@ -156,6 +190,12 @@ export const cars = [
     features: ["4WD", "Navigation"],
     description: "Lənkəranda off-road üçün ideal seçim.",
     host: { name: "Chris B.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "100%", trips: 267 },
+        reviews: [
+      { id: 1, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "March 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 2, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "February 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 3, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "January 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 4, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "December 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+    ],
     instantBook: true
   },
 
@@ -182,6 +222,13 @@ export const cars = [
     features: ["V8 Engine"],
     description: "Naxçıvanda güclü Mustang təcrübəsi.",
     host: { name: "Ryan T.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2019", responseRate: "99%", trips: 312 },
+        reviews: [
+      { id: 1, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "March 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 2, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "February 2026", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 3, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "January 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 4, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "December 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 5, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "November 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+    ],
     instantBook: true
   },
 
@@ -208,6 +255,12 @@ export const cars = [
     features: ["Panoramic Roof"],
     description: "Şirvanda lüks SUV sürüşü.",
     host: { name: "Emma W.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "100%", trips: 134 },
+        reviews: [
+      { id: 1, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "March 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 2, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "February 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 4, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "December 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+    ],
     instantBook: false
   },
 
@@ -234,6 +287,13 @@ export const cars = [
     features: ["Mid-Engine"],
     description: "Qəbələdə supercar təcrübəsi.",
     host: { name: "Kevin P.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "100%", trips: 89 },
+        reviews: [
+      { id: 1, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "March 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 2, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "February 2026", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 3, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "January 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 4, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "December 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 5, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "November 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+    ],
     instantBook: true
   },
 
@@ -260,6 +320,14 @@ export const cars = [
     features: ["Quattro AWD"],
     description: "Qubada premium sürüş təcrübəsi.",
     host: { name: "Alex M.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "98%", trips: 156 },
+        reviews: [
+      { id: 1, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "March 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 2, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "February 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 3, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "January 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 4, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "December 2025", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 5, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "November 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 6, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "October 2025", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+    ],
     instantBook: true
   },
 
@@ -286,6 +354,13 @@ export const cars = [
     features: ["AWD"],
     description: "Zaqatalada ailə üçün ideal SUV.",
     host: { name: "Lisa C.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "96%", trips: 234 },
+        reviews: [
+      { id: 1, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "March 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 2, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "February 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 3, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "January 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 4, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "December 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 5, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "November 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+    ],
     instantBook: true
   },
 
@@ -317,6 +392,14 @@ export const cars = [
     features: ["AWD","Navigation"],
     description: "Bakıda premium SUV təcrübəsi.",
     host: { name: "Ali M.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "98%", trips: 210 },
+        reviews: [
+      { id: 1, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "March 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 2, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "February 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 3, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "January 2026", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 4, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "December 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 5, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "November 2025", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 6, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "October 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+    ],
     instantBook: true
   },
   {
@@ -342,6 +425,12 @@ export const cars = [
     features: ["Bluetooth","Camera"],
     description: "Gəncədə rahat və komfortlu sedan.",
     host: { name: "Rashad K.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "97%", trips: 134 },
+        reviews: [
+      { id: 1, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "March 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 2, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "February 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 3, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "January 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 4, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "December 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+    ],
     instantBook: true
   },
   {
@@ -367,6 +456,14 @@ export const cars = [
     features: ["Leather","Navigation"],
     description: "Sumqayıtda lüks sedan.",
     host: { name: "Elvin T.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2019", responseRate: "99%", trips: 300 },
+        reviews: [
+      { id: 1, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "March 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 2, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "February 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 3, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "January 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 4, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "December 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 5, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "November 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 6, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "October 2025", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+    ],
     instantBook: true
   },
   {
@@ -392,6 +489,12 @@ export const cars = [
     features: ["Economy"],
     description: "Mingəçevirdə sərfəli seçim.",
     host: { name: "Murad H.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "96%", trips: 120 },
+        reviews: [
+      { id: 1, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "March 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 2, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "February 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 3, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "January 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 4, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "December 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+    ],
     instantBook: true
   },
   {
@@ -417,6 +520,14 @@ export const cars = [
     features: ["Bluetooth"],
     description: "Şəkidə etibarlı sedan.",
     host: { name: "Kamran Z.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "97%", trips: 160 },
+        reviews: [
+      { id: 1, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "March 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 2, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "February 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 3, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "January 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 4, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "December 2025", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 5, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "November 2025", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 6, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "October 2025", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+    ],
     instantBook: true
   },
   {
@@ -442,6 +553,14 @@ export const cars = [
     features: ["USB"],
     description: "Lənkəranda gündəlik istifadə üçün ideal.",
     host: { name: "Nurlan A.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "95%", trips: 110 },
+        reviews: [
+      { id: 1, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "March 2026", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 2, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "February 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 4, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "December 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 5, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "November 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 6, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "October 2025", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+    ],
     instantBook: false
   },
   {
@@ -467,6 +586,12 @@ export const cars = [
     features: ["Camera"],
     description: "Naxçıvanda rahat sürüş.",
     host: { name: "Orxan B.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "96%", trips: 90 },
+        reviews: [
+      { id: 1, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "March 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 2, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "February 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 3, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "January 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 4, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "December 2025", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+    ],
     instantBook: true
   },
   {
@@ -492,6 +617,14 @@ export const cars = [
     features: ["AWD"],
     description: "Şirvanda ailə SUV.",
     host: { name: "Rauf S.",avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "98%", trips: 80 },
+        reviews: [
+      { id: 1, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "March 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 2, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "February 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 3, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "January 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 4, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "December 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 5, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "November 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 6, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "October 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+    ],
     instantBook: true
   },
   {
@@ -517,6 +650,14 @@ export const cars = [
     features: ["AWD"],
     description: "Qəbələdə dağ yolları üçün ideal.",
     host: { name: "Tural D.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "97%", trips: 140 },
+        reviews: [
+      { id: 1, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "March 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 2, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "February 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 3, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "January 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 4, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "December 2025", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 5, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "November 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 6, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "October 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+    ],
     instantBook: true
   },
   {
@@ -542,6 +683,14 @@ export const cars = [
     features: ["Luxury"],
     description: "Qubada premium SUV.",
     host: { name: "Emin Q.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2019", responseRate: "99%", trips: 200 },
+        reviews: [
+      { id: 1, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "March 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 2, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "February 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 3, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "January 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 4, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "December 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 5, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "November 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 6, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "October 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+    ],
     instantBook: true
   },
 
@@ -568,6 +717,14 @@ export const cars = [
     features: ["Sport"],
     description: "Zaqatalada premium SUV.",
     host: { name: "Farid L.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "100%", trips: 170 },
+        reviews: [
+      { id: 1, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "March 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 2, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "February 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 4, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "December 2025", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 5, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "November 2025", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 6, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "October 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+    ],
     instantBook: false
   },
 
@@ -594,6 +751,13 @@ export const cars = [
     features: ["Comfort"],
     description: "Bakıda rahat sedan.",
     host: { name: "Samir P.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "95%", trips: 80 },
+        reviews: [
+      { id: 1, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "March 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 2, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "February 2026", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 4, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "December 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 5, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "November 2025", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+    ],
     instantBook: true
   },
 
@@ -620,6 +784,14 @@ export const cars = [
     features: ["4WD"],
     description: "Gəncədə off-road üçün uyğun.",
     host: { name: "Zaur M.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "97%", trips: 100 },
+        reviews: [
+      { id: 1, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "March 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 2, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "February 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 3, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "January 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 4, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "December 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 5, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "November 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 6, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "October 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+    ],
     instantBook: true
   },
    {
@@ -645,6 +817,12 @@ export const cars = [
     features: ["AWD","Camera"],
     description: "Bakıda rahat SUV.",
     host: { name: "Anar V.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "97%", trips: 95 },
+        reviews: [
+      { id: 1, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "March 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 2, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "February 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 3, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "January 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 4, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "December 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+    ],
     instantBook: true
   },
   {
@@ -670,6 +848,12 @@ export const cars = [
     features: ["Comfort"],
     description: "Gəncədə komfortlu sedan.",
     host: { name: "Ramil K.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "96%", trips: 120 },
+        reviews: [
+      { id: 1, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "March 2026", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 2, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "February 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 3, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "January 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 4, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "December 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+    ],
     instantBook: true
   },
   {
@@ -695,6 +879,13 @@ export const cars = [
     features: ["AWD"],
     description: "Qəbələdə dağ yolları üçün ideal.",
     host: { name: "Tahir S.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "98%", trips: 70 },
+        reviews: [
+      { id: 1, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "March 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 2, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "February 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 3, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "January 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 4, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "December 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 5, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "November 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+    ],
     instantBook: true
   },
   {
@@ -720,6 +911,13 @@ export const cars = [
     features: ["Navigation"],
     description: "Sumqayıtda modern SUV.",
     host: { name: "Elshan M.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "96%", trips: 85 },
+        reviews: [
+      { id: 1, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "March 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 2, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "February 2026", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 3, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "January 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 4, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "December 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 5, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "November 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+    ],
     instantBook: true
   },
   {
@@ -745,6 +943,12 @@ export const cars = [
     features: ["Economy"],
     description: "Şəkidə sərfəli seçim.",
     host: { name: "Vusal A.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "95%", trips: 110 },
+        reviews: [
+      { id: 1, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "March 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 2, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "February 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 3, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "January 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 4, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "December 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+    ],
     instantBook: false
   },
   {
@@ -770,6 +974,12 @@ export const cars = [
     features: ["Comfort"],
     description: "Lənkəranda geniş sedan.",
     host: { name: "Orkhan N.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "97%", trips: 90 },
+        reviews: [
+      { id: 1, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "March 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 2, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "February 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 4, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "December 2025", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+    ],
     instantBook: true
   },
   {
@@ -795,6 +1005,14 @@ export const cars = [
     features: ["Safety"],
     description: "Mingəçevirdə təhlükəsiz SUV.",
     host: { name: "Eldar P.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "98%", trips: 60 },
+        reviews: [
+      { id: 1, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "March 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 2, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "February 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 3, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "January 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 4, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "December 2025", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 5, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "November 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 6, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "October 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+    ],
     instantBook: true
   },
   {
@@ -820,6 +1038,14 @@ export const cars = [
     features: ["Luxury"],
     description: "Şirvanda premium sedan.",
     host: { name: "Samir G.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "96%", trips: 88 },
+        reviews: [
+      { id: 1, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "March 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 2, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "February 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 3, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "January 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 4, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "December 2025", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+      { id: 5, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "November 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 6, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "October 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+    ],
     instantBook: true
   },
   {
@@ -845,6 +1071,12 @@ export const cars = [
     features: ["V8"],
     description: "Qubada güclü sedan.",
     host: { name: "Rashid T.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2019", responseRate: "97%", trips: 120 },
+        reviews: [
+      { id: 1, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "March 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 2, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "February 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 3, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "January 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 4, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "December 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+    ],
     instantBook: true
   },
   {
@@ -870,6 +1102,12 @@ export const cars = [
     features: ["Compact"],
     description: "Zaqatalada kiçik və rahat.",
     host: { name: "Nicat S.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "96%", trips: 60 },
+        reviews: [
+      { id: 1, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "March 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 2, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "February 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 3, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "January 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 4, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "December 2025", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+    ],
     instantBook: true
   },
   {
@@ -895,6 +1133,14 @@ export const cars = [
     features: ["Luxury"],
     description: "Bakıda premium SUV.",
     host: { name: "Ilgar M.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "98%", trips: 55 },
+        reviews: [
+      { id: 1, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "March 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 2, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "February 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 3, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "January 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 4, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "December 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 5, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "November 2025", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 6, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "October 2025", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+    ],
     instantBook: true
   },
   {
@@ -920,6 +1166,14 @@ export const cars = [
     features: ["Sport"],
     description: "Gəncədə sporty sedan.",
     host: { name: "Kamran R.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "97%", trips: 45 },
+        reviews: [
+      { id: 1, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "March 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 2, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "February 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 4, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "December 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 5, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "November 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 6, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "October 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+    ],
     instantBook: true
   },
   {
@@ -945,6 +1199,13 @@ export const cars = [
     features: ["AWD"],
     description: "Sumqayıtda ailə SUV.",
     host: { name: "Emin H.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "96%", trips: 85 },
+        reviews: [
+      { id: 1, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "March 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 2, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "February 2026", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 3, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "January 2026", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 4, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "December 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 5, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "November 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+    ],
     instantBook: true
   },
   {
@@ -970,6 +1231,13 @@ export const cars = [
     features: ["Economy"],
     description: "Şəkidə sərfəli sedan.",
     host: { name: "Rauf K.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "95%", trips: 95 },
+        reviews: [
+      { id: 1, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "March 2026", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 2, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "February 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 3, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "January 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 4, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "December 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 5, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "November 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+    ],
     instantBook: false
   },
   {
@@ -995,6 +1263,12 @@ export const cars = [
     features: ["Comfort"],
     description: "Lənkəranda rahat sedan.",
     host: { name: "Tural M.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "96%", trips: 100 },
+        reviews: [
+      { id: 1, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "March 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 2, name: "Sarah M.", avatar: "S", color: "#e8f4fd", textColor: "#1a6fa8", date: "February 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 3, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "January 2026", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+      { id: 4, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "December 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+    ],
     instantBook: true
   },
   {
@@ -1020,6 +1294,13 @@ export const cars = [
     features: ["Luxury"],
     description: "Qəbələdə premium SUV.",
     host: { name: "Fariz A.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "98%", trips: 50 },
+        reviews: [
+      { id: 1, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "March 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 2, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "February 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 3, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "January 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 4, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "December 2025", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 5, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "November 2025", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+    ],
     instantBook: true
   },
   {
@@ -1045,6 +1326,12 @@ export const cars = [
     features: ["AWD"],
     description: "Qubada geniş SUV.",
     host: { name: "Nurlan T.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "97%", trips: 70 },
+        reviews: [
+      { id: 1, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "March 2026", rating: 5, text: "Seamless rental process. Car was immaculate and the host communicated perfectly throughout." },
+      { id: 2, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "February 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 3, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "January 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 4, name: "Nina S.", avatar: "N", color: "#e8f6f4", textColor: "#0f6e5a", date: "December 2025", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+    ],
     instantBook: true
   },
   {
@@ -1070,6 +1357,12 @@ export const cars = [
     features: ["AWD"],
     description: "Zaqatalada sərfəli SUV.",
     host: { name: "Elvin C.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2020", responseRate: "95%", trips: 90 },
+        reviews: [
+      { id: 1, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "March 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 2, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "February 2026", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 3, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "January 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 4, name: "Ryan T.", avatar: "R", color: "#f0f4ff", textColor: "#1a3fa8", date: "December 2025", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+    ],
     instantBook: false
   },
   {
@@ -1095,6 +1388,13 @@ export const cars = [
     features: ["Economy"],
     description: "Bakıda sərfəli sedan.",
     host: { name: "Samad R.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2021", responseRate: "95%", trips: 110 },
+        reviews: [
+      { id: 1, name: "Felix G.", avatar: "F", color: "#fce8ee", textColor: "#a0196a", date: "March 2026", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+      { id: 2, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "February 2026", rating: 5, text: "Incredible experience from start to finish. Comfortable, stylish, and exactly as described. 10/10!" },
+      { id: 3, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "January 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 4, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "December 2025", rating: 5, text: "Loved every minute! The car was spotless and the host made everything seamless. Perfect trip!" },
+      { id: 5, name: "Omar B.", avatar: "O", color: "#fff8e1", textColor: "#8a6000", date: "November 2025", rating: 5, text: "Outstanding! The vehicle exceeded expectations — smooth ride, clean interior, easy pickup." },
+    ],
     instantBook: true
   },
   {
@@ -1120,6 +1420,13 @@ export const cars = [
     features: ["Luxury"],
     description: "Gəncədə böyük sedan.",
     host: { name: "Rashad N.",avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", joined: "2022", responseRate: "97%", trips: 75 },
+        reviews: [
+      { id: 1, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "March 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 2, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "February 2026", rating: 5, text: "Perfect car for exploring. The host had everything ready on time. Highly recommend!" },
+      { id: 3, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "January 2026", rating: 4, text: "Really nice vehicle and smooth process. Minor issue with GPS but no big deal. Great host!" },
+      { id: 4, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "December 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 5, name: "Leila N.", avatar: "L", color: "#f5f0fe", textColor: "#6b3db5", date: "November 2025", rating: 4, text: "Very good experience. Car was clean and comfortable. Pickup took a few extra minutes but worth it." },
+    ],
     instantBook: true
   },
   {
@@ -1151,7 +1458,15 @@ export const cars = [
     responseRate: "98%",
     trips: 60
   },
-  instantBook: true
+      reviews: [
+      { id: 1, name: "Aisha T.", avatar: "A", color: "#fef3e2", textColor: "#b06000", date: "March 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 2, name: "Carlos R.", avatar: "C", color: "#fce8f3", textColor: "#a0196e", date: "February 2026", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 3, name: "Mei L.", avatar: "M", color: "#ede8fc", textColor: "#5b3db5", date: "January 2026", rating: 4, text: "Great car overall. Only wish parking instructions were a bit clearer, but enjoyed the trip." },
+      { id: 4, name: "Emma W.", avatar: "E", color: "#fdf0f0", textColor: "#a32d2d", date: "December 2025", rating: 5, text: "Absolutely amazing car! Super clean, drives like a dream. Host was very responsive. Would definitely rent again!" },
+      { id: 5, name: "David P.", avatar: "D", color: "#e8faf4", textColor: "#0f6e56", date: "November 2025", rating: 4, text: "Nice car and friendly host. A couple of small things not mentioned in listing but nothing serious." },
+      { id: 6, name: "James K.", avatar: "J", color: "#edf7ed", textColor: "#1e7e34", date: "October 2025", rating: 5, text: "Best rental experience I had. Car was pristine and the host was super helpful." },
+    ],
+    instantBook: true
 }
 ];
 

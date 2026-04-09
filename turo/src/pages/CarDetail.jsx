@@ -2,6 +2,16 @@ import { useState, useContext } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { AppContext } from '../App'
 
+function StarRating({ rating }) {
+  return (
+    <span style={{ display: 'inline-flex', gap: '2px' }}>
+      {[1, 2, 3, 4, 5].map((s) => (
+        <span key={s} style={{ color: s <= rating ? '#593cfb' : '#d1d5db', fontSize: '14px' }}>★</span>
+      ))}
+    </span>
+  )
+}
+
 function CarDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -12,6 +22,7 @@ function CarDetail() {
   const [startDate, setStartDate] = useState('')
   const [endDate, setEndDate] = useState('')
   const [message, setMessage] = useState('')
+  const [showAllReviews, setShowAllReviews] = useState(false)
 
   if (!car) {
     return (
@@ -45,31 +56,24 @@ function CarDetail() {
       navigate('/signin')
       return
     }
-
     if (!startDate || !endDate) {
       setMessage('Please select pickup and return dates')
       return
     }
-
     if (days <= 0) {
       setMessage('Return date must be after pickup date')
       return
     }
-
-    addBooking({
-      carId: car.id,
-      car: car,
-      startDate,
-      endDate,
-      days,
-      total
-    })
-
+    addBooking({ carId: car.id, car, startDate, endDate, days, total })
     setMessage('Booking confirmed! Check your dashboard for details.')
-    setTimeout(() => {
-      navigate('/dashboard?tab=bookings')
-    }, 2000)
+    setTimeout(() => navigate('/dashboard?tab=bookings'), 2000)
   }
+
+  const reviews = car.reviews || []
+  const visibleReviews = showAllReviews ? reviews : reviews.slice(0, 4)
+  const avgRating = reviews.length
+    ? (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(2)
+    : car.rating.toFixed(1)
 
   return (
     <div className="car-detail-page">
@@ -81,12 +85,12 @@ function CarDetail() {
       </Link>
 
       <div className="car-detail-grid">
-        {/* Left Column - Gallery & Info */}
+        {/* Left Column */}
         <div>
           {/* Gallery */}
           <div className="car-gallery">
-            <img 
-              src={car.images[selectedImage]} 
+            <img
+              src={car.images[selectedImage]}
               alt={`${car.make} ${car.model}`}
               className="car-main-image"
             />
@@ -119,23 +123,19 @@ function CarDetail() {
                 </div>
               </div>
               {user && (
-                <button 
+                <button
                   onClick={() => toggleFavorite(car.id)}
-                  style={{ 
+                  style={{
                     padding: '10px',
                     border: '1px solid #e5e5e5',
                     borderRadius: '8px',
-                    background: isFavorite ? '#fce4ec' : '#fff'
+                    background: isFavorite ? '#fce4ec' : '#fff',
+                    cursor: 'pointer'
                   }}
                 >
-                  <svg 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
+                  <svg width="24" height="24" viewBox="0 0 24 24"
                     fill={isFavorite ? '#e91e63' : 'none'}
-                    stroke={isFavorite ? '#e91e63' : '#666'}
-                    strokeWidth="2"
-                  >
+                    stroke={isFavorite ? '#e91e63' : '#666'} strokeWidth="2">
                     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                   </svg>
                 </button>
@@ -144,11 +144,7 @@ function CarDetail() {
 
             {/* Host Info */}
             <div className="car-host-info">
-              <img 
-                src={car.host.avatar} 
-                alt={car.host.name}
-                className="host-avatar"
-              />
+              <img src={car.host.avatar} alt={car.host.name} className="host-avatar" />
               <div className="host-name">
                 <strong>Hosted by {car.host.name}</strong>
                 <span>Joined {car.host.joined} | {car.host.trips} trips | {car.host.responseRate} response rate</span>
@@ -207,6 +203,85 @@ function CarDetail() {
                 ))}
               </div>
             </div>
+
+            {/* ===== REVIEWS ===== */}
+            {reviews.length > 0 && (
+              <div className="car-reviews" style={{ marginTop: '40px' }}>
+
+                {/* Başlık */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#593cfb" stroke="#593cfb">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                  <h3 style={{ margin: 0, fontSize: '18px', fontWeight: '700' }}>
+                    {avgRating} · {reviews.length} reviews
+                  </h3>
+                </div>
+
+                {/* Reviews grid */}
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gap: '20px'
+                }}>
+                  {visibleReviews.map((r) => (
+                    <div key={r.id} style={{
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '12px',
+                      padding: '18px',
+                      background: '#fff'
+                    }}>
+                      {/* Üst kısım: avatar + isim + tarih */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+                        <div style={{
+                          width: '42px', height: '42px', borderRadius: '50%',
+                          background: r.color, color: r.textColor,
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          fontWeight: '700', fontSize: '16px', flexShrink: 0
+                        }}>
+                          {r.avatar}
+                        </div>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontWeight: '600', fontSize: '14px', color: '#111' }}>{r.name}</div>
+                          <div style={{ fontSize: '12px', color: '#6b7280', marginTop: '2px' }}>{r.date}</div>
+                        </div>
+                        <StarRating rating={r.rating} />
+                      </div>
+
+                      {/* Yorum metni */}
+                      <p style={{
+                        margin: 0, fontSize: '14px', color: '#374151',
+                        lineHeight: '1.6'
+                      }}>
+                        {r.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Show all / Show less butonu */}
+                {reviews.length > 4 && (
+                  <button
+                    onClick={() => setShowAllReviews(!showAllReviews)}
+                    style={{
+                      marginTop: '20px',
+                      padding: '10px 24px',
+                      border: '1px solid #111',
+                      borderRadius: '8px',
+                      background: '#fff',
+                      fontWeight: '600',
+                      fontSize: '14px',
+                      cursor: 'pointer',
+                      color: '#111'
+                    }}
+                  >
+                    {showAllReviews ? 'Show less' : `Show all ${reviews.length} reviews`}
+                  </button>
+                )}
+              </div>
+            )}
+            {/* ===== REVIEWS END ===== */}
+
           </div>
         </div>
 
@@ -271,7 +346,7 @@ function CarDetail() {
               <button className="book-btn" onClick={handleBooking}>
                 {car.instantBook ? 'Book instantly' : 'Request to book'}
               </button>
-              
+
               {car.instantBook && (
                 <p style={{ textAlign: 'center', fontSize: '12px', color: '#666', marginTop: '8px' }}>
                   Instant booking - no approval needed
@@ -279,12 +354,9 @@ function CarDetail() {
               )}
             </div>
 
-            <div style={{ 
-              marginTop: '24px', 
-              padding: '16px', 
-              background: '#f8f8f8', 
-              borderRadius: '8px',
-              fontSize: '14px'
+            <div style={{
+              marginTop: '24px', padding: '16px',
+              background: '#f8f8f8', borderRadius: '8px', fontSize: '14px'
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#593cfb" strokeWidth="2">
@@ -292,9 +364,7 @@ function CarDetail() {
                 </svg>
                 <span style={{ fontWeight: '600' }}>Free cancellation</span>
               </div>
-              <p style={{ color: '#666', margin: 0 }}>
-                Full refund before trip starts
-              </p>
+              <p style={{ color: '#666', margin: 0 }}>Full refund before trip starts</p>
             </div>
           </div>
         </div>
