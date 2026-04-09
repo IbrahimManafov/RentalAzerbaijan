@@ -163,7 +163,7 @@ function Home() {
               </svg>
             </div>
             <h3>Book your trip</h3>
-            <p>Book on the Turo website or app, and get ready for an unforgettable trip.</p>
+            <p>Book on the Rental website or app, and get ready for an unforgettable trip.</p>
           </div>
           
           <div className="step">
