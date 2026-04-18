@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -1785,3 +1784,666 @@ input, select, textarea {
 .step:nth-child(2) { --delay: 0.2s; }
 .step:nth-child(3) { --delay: 0.4s; }
 
+
+/* ============================================================
+   SUPER RESPONSIVE — Bütün ekran ölçüləri üçün
+   Breakpoints:
+     xs  : < 480px    (kiçik telefon)
+     sm  : 480–767px  (böyük telefon)
+     md  : 768–1023px (tablet)
+     lg  : 1024–1279px (kiçik laptop)
+     xl  : ≥ 1280px   (masaüstü)
+   ============================================================ */
+
+/* ── HEADER ─────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .header-logo img {
+    width: 90px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .header-actions .btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header-actions .btn-outline {
+    display: none;
+  }
+}
+
+
+/* ── HERO ────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .hero {
+    min-height: 420px;
+  }
+
+  .hero-content {
+    padding: 40px 16px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+
+  .stat-number {
+    font-size: 22px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+}
+
+
+/* ── SEARCH BOX ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .search-box {
+    border-radius: 12px;
+    padding: 12px;
+    margin: 0 8px;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-field {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 14px 12px;
+    width: 100%;
+  }
+
+  .search-field:last-of-type {
+    border-bottom: none;
+  }
+
+  .search-field input,
+  .search-field select {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+    justify-content: center;
+    margin: 8px 0 0 0;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .search-box {
+    margin: 0 4px;
+    padding: 8px;
+  }
+
+  .search-field {
+    padding: 12px 10px;
+  }
+
+  .search-field label {
+    font-size: 10px;
+  }
+
+  .search-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+
+/* ── CATEGORIES ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .categories {
+    padding: 40px 16px;
+  }
+
+  .categories h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .category-card {
+    padding: 16px 8px;
+    border-radius: 14px;
+  }
+
+  .category-card div {
+    width: 48px;
+    height: 48px;
+  }
+
+  .category-card span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 479px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .categories h2 {
+    font-size: 20px;
+  }
+}
+
+
+/* ── CAR SECTION / GRID ──────────────────────────────────── */
+@media (max-width: 1023px) {
+  .car-section {
+    padding: 40px 16px;
+  }
+
+  .car-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-header h2 {
+    font-size: 20px;
+  }
+
+  .car-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .car-image {
+    height: 180px;
+  }
+
+  .car-title {
+    font-size: 15px;
+  }
+
+  .car-price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 479px) {
+  .car-section {
+    padding: 32px 12px;
+  }
+
+  .car-image {
+    height: 160px;
+  }
+}
+
+
+/* ── HOW IT WORKS ────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .how-it-works {
+    padding: 48px 16px;
+  }
+
+  .how-it-works h2 {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .step {
+    padding: 24px 16px;
+  }
+
+  .step-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .step h3 {
+    font-size: 17px;
+  }
+}
+
+
+/* ── HOST CTA ────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .host-cta {
+    padding: 56px 16px;
+  }
+
+  .host-cta h2 {
+    font-size: 24px;
+  }
+
+  .host-cta p {
+    font-size: 15px;
+  }
+
+  .host-cta .btn-primary {
+    font-size: 15px;
+    padding: 12px 24px;
+    width: 100%;
+  }
+}
+
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .footer {
+    padding: 40px 16px 24px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-section h4 {
+    font-size: 13px;
+  }
+
+  .footer-section a {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+
+/* ── AUTH PAGES ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .auth-page {
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .auth-box {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .auth-box h1 {
+    font-size: 22px;
+  }
+
+  .auth-form .btn-primary {
+    font-size: 15px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 479px) {
+  .auth-box {
+    padding: 24px 16px;
+  }
+
+  .social-btn {
+    font-size: 13px;
+    padding: 11px;
+  }
+}
+
+
+/* ── CAR DETAIL PAGE ─────────────────────────────────────── */
+@media (max-width: 1023px) {
+  .car-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  .car-detail-page {
+    padding: 16px;
+  }
+
+  .car-detail-info h1 {
+    font-size: 22px;
+  }
+
+  .car-main-image {
+    height: 240px;
+  }
+
+  .car-thumbnails img {
+    height: 60px;
+  }
+
+  .car-stats {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .date-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-price {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 479px) {
+  .car-main-image {
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .car-thumbnails img {
+    height: 50px;
+  }
+}
+
+
+/* ── HOST / ADD CAR FORM ─────────────────────────────────── */
+@media (max-width: 767px) {
+  .host-page {
+    padding: 24px 16px;
+  }
+
+  .host-page h1 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section {
+    padding: 16px;
+  }
+
+  .form-section h3 {
+    font-size: 16px;
+  }
+
+  .feature-checkboxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-upload {
+    padding: 28px 16px;
+  }
+
+  .fixed-textarea {
+    width: 100% !important;
+    height: 160px;
+  }
+}
+
+@media (max-width: 479px) {
+  .feature-checkboxes {
+    grid-template-columns: 1fr;
+  }
+
+  .image-upload .preview img {
+    width: 90px;
+    height: 60px;
+  }
+}
+
+
+/* ── SEARCH RESULTS PAGE ─────────────────────────────────── */
+@media (max-width: 1023px) {
+  .search-content {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .search-page {
+    padding: 16px;
+  }
+
+  .search-header h1 {
+    font-size: 20px;
+  }
+
+  .search-filters {
+    gap: 8px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+
+/* ── DASHBOARD ───────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .dashboard-page {
+    padding: 24px 16px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 22px;
+  }
+
+  .dashboard-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+  }
+
+  .dashboard-tab {
+    flex-shrink: 0;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .booking-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .booking-item img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .booking-info h3 {
+    font-size: 16px;
+  }
+
+  .booking-dates {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .booking-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .my-cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-car-card {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 479px) {
+  .booking-item img {
+    height: 130px;
+  }
+}
+
+
+/* ── MODAL ───────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .modal {
+    padding: 24px 20px;
+    border-radius: 12px;
+    width: 94%;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .modal-overlay {
+    align-items: flex-end;
+  }
+
+  .modal {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-height: 85vh;
+  }
+}
+
+
+/* ── VIP FEATURES ────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .vip-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .feature-label {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+}
+
+
+/* ── GLOBAL UTILS ────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .empty-state {
+    padding: 40px 16px;
+  }
+
+  .empty-state h3 {
+    font-size: 16px;
+  }
+}
+
+/* Touch cihazlarda hover "yapışıb qalma" problemi aradan qaldırılır */
+@media (hover: none) {
+  .car-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .category-card:hover {
+    transform: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+
+  .category-card:hover div {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .step:hover {
+    transform: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+
+  .step:hover .step-icon {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .search-btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
